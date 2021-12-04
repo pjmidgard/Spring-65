@@ -1794,7 +1794,7 @@ class compression:
                                            if sda12[0:2]=="11" and Spin<Spin2:
 
                                                          sda10=sda3[ei:ei+31]
-                                                         sda11=sda3[ei:ei+28]
+                                                         sda11=sda3[ei:ei+27]
 
                                                          sda10=sda10[2:]
                                                          sda11=sda11[2:]
@@ -1810,8 +1810,8 @@ class compression:
                                                          elif sda11[0:1]=="1":
                                                              sda11=sda11[1:]
 
-                                                             sda10=sda10[4:6]+sda10[4:6][::-1]+sda10[0:8]+sda10[4:6][::-1]+sda10[3:4]+sda10[3:4]+sda10[8:]
-                                                             ei=ei+28
+                                                             sda10=sda10[4:6]+sda10[4:6][::-1]+sda10[0:8]+sda10[4:6][::-1]+sda10[3:4]+sda10[3:4]+sda10[8:13]+sda10[4:6][::-1]
+                                                             ei=ei+27
                                                         
                                                          
                                                          
@@ -1958,10 +1958,10 @@ class compression:
                                                             sda17=sda17+"110"+sda10
 
 
-                                               elif sda10[0:2]==sda10[6:8][::-1] and sda10[0:2]==sda10[10:12] and sda10[1:3]==sda10[10:12] and sda10[2:4]==sda10[11:13] and sda10[2:4]==sda10[12:14]:
+                                               elif sda10[0:2]==sda10[6:8][::-1] and sda10[0:2]==sda10[10:12] and sda10[0:2]==sda10[15:17] and sda10[1:3]==sda10[10:12] and sda10[2:4]==sda10[11:13] and sda10[2:4]==sda10[12:14]:
                                                             
                                                             
-                                                            sda10=sda10[3:10]+sda10[14:]
+                                                            sda10=sda10[3:10]+sda10[14:15]+sda10[17:]
                                                             
                                                     
 
