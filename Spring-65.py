@@ -1810,7 +1810,7 @@ class compression:
                                                          elif sda11[0:1]=="1":
                                                              sda11=sda11[1:]
 
-                                                             sda11=sda11[4:6]+sda10[4:6][::-1]+sda11[0:8]+sda10[4:6][::-1]+sda11[8:]
+                                                             sda11=sda11[4:6]+sda11[4:6][::-1]+sda11[0:8]+sda11[4:6][::-1]+sda11[8:]
                                                              sda17=sda17+sda11
                                                              ei=ei+30
                                                         
