@@ -1125,6 +1125,7 @@ class compression:
                                    
                                     acvb=lenfg-1
                                     notexist=k[0]
+                                    del k[:]  
                                     xx=1
                                     #print(notexist)
                                     
